@@ -1,0 +1,75 @@
+.Inputbox {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.12);
+  margin: 5%;
+}
+.input {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100% !important;
+  border: none;
+  background: transparent;
+}
+
+.logo > h2 {
+  float: left !important;
+  color: white;
+}
+.Menu {
+  float: right;
+  padding-right: 0% !important;
+}
+.input form > Button {
+  font-weight: 800 !important;
+
+  border-radius: 5px !important;
+  float: none;
+  margin-left: 0%;
+}
+
+.input form > Button:hover {
+  background-color: #434743 !important;
+  border-color: rgb(138, 163, 134) !important;
+  color: white !important;
+}
+.input form > Input {
+  border-radius: 5px !important;
+  border-style: solid;
+  width: 100% !important;
+}
+h1 {
+  text-align: center !important;
+  font-family: "montserrat", sans-serif;
+  color: #22254b !important;
+  font-size: 30px;
+  font-weight: 600;
+}
+.carousel-caption {
+  text-align: center;
+  color: beige;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}

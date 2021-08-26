@@ -1,0 +1,15 @@
+.detail {
+  justify-content: center !important;
+  padding-top: 2%;
+  font-size: medium;
+  margin-left: 20%;
+}
+h2 {
+  /* margin-left: 20%; */
+  color: darkred;
+  font-weight: 200px;
+}
+.image > img {
+  align-items: center !important;
+  margin-left: 500px;
+}
