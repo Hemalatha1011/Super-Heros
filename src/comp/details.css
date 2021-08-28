@@ -1,8 +1,9 @@
 .detail {
   justify-content: center !important;
-  padding-top: 2%;
+  margin-left: 2%;
   font-size: medium;
-  margin-left: 20%;
+  float: left;
+  padding-top: 2%;
 }
 h2 {
   /* margin-left: 20%; */
@@ -10,6 +11,13 @@ h2 {
   font-weight: 200px;
 }
 .image > img {
-  align-items: center !important;
-  margin-left: 500px;
+  margin-left: 2%;
+  padding-top: 3%;
+}
+.button > button:hover {
+  background-color: #434743 !important;
+  border-color: rgb(138, 163, 134) !important;
+}
+.button {
+  margin-left: 3%;
 }

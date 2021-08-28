@@ -18,13 +18,13 @@
   background: transparent;
 }
 
-.logo > h2 {
-  float: left !important;
-  color: white;
+.logo {
+  position: absolute;
+  margin-left: -2%;
 }
 .Menu {
+  padding-right: 5% !important;
   float: right;
-  padding-right: 0% !important;
 }
 .input form > Button {
   font-weight: 800 !important;
@@ -67,8 +67,8 @@ h1 {
   font-family: "Times New Roman", Times, serif;
 }
 
-
 .container {
+  padding-top: 0%;
   position: relative;
   text-align: center;
   color: white;

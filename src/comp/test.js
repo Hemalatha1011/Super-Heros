@@ -27,7 +27,11 @@ function Test() {
         <div className="body">
           <Header>
             <div className="logo">
-              <h2>Your SuperHeros</h2>
+              <img
+                src="https://www.templateupdates.com/wp-content/uploads/2018/04/Super-Hero-Heart-Logo-Template.jpg"
+                width="10%"
+                alt="logo"
+              />
             </div>
 
             <Menu
@@ -40,7 +44,7 @@ function Test() {
                 <Link to="/">Home</Link>{" "}
               </Menu.Item>
               <Menu.Item key="2">
-                <Link to="/test">SuperHeros List</Link>{" "}
+                <Link to="/test">Heros List</Link>{" "}
               </Menu.Item>
             </Menu>
           </Header>

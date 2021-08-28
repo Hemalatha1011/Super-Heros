@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./details.css";
 import { Typography } from "antd";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const { Title } = Typography;
 
@@ -31,47 +32,53 @@ function Details(props) {
           fontStyle: "oblique",
         }}
       >
-        <h1>Your Superhero Details.</h1>
+        <h1>
+          <u>Your Superhero Details </u>
+        </h1>
       </div>
-      <div className="logo">
-        <div className="image">
-          {heros !== "" ? (
-            <>
-              <img src={heros.image.url} alt={heros.name} width="200" />
 
-              <div className="detail">
-                <h2>
-                  <u>Characteristics are,</u>
-                </h2>
-                <Title level={5}>Full-name:- {heros.name}</Title>
-                <Title level={5}> Gender:- {heros.appearance.gender}</Title>
-                <Title level={5}>
-                  First-appearance:-{heros.biography["first-appearance"]}{" "}
-                </Title>
-                <Title level={5}>
-                  Place-of-birth:-{heros.biography["place-of-birth"]}
-                </Title>
-                <Title level={5}>publisher:-{heros.biography.publisher}</Title>
-                <Title level={5}>Occupation:- {heros.work.occupation}</Title>
-                <h2>
-                  <u>Describe a superhero:</u>
-                </h2>
-                <p
-                  style={{
-                    fontWeight: "500",
-                  }}
-                >
-                  I am {heros.name}. I have a {heros.appearance["eye-color"]}{" "}
-                  and {heros.appearance["hair-color"]}. I am a{" "}
-                  {heros.work.occupation} and my strength is "
-                  {heros.powerstats.strength}".{" "}
-                </p>
-              </div>
-            </>
-          ) : (
-            <p>loading..</p>
-          )}{" "}
-        </div>
+      <div className="image">
+        {heros !== "" ? (
+          <>
+            <img src={heros.image.url} alt={heros.name} width="300" />
+
+            <div className="detail">
+              <h2>
+                <u>Characteristics are,</u>
+              </h2>
+              <Title level={5}>Full-name:- {heros.name}</Title>
+              <Title level={5}> Gender:- {heros.appearance.gender}</Title>
+              <Title level={5}>
+                First-appearance:-{heros.biography["first-appearance"]}{" "}
+              </Title>
+              <Title level={5}>
+                Place-of-birth:-{heros.biography["place-of-birth"]}
+              </Title>
+              <Title level={5}>publisher:-{heros.biography.publisher}</Title>
+              <Title level={5}>Occupation:- {heros.work.occupation}</Title>
+              <h2>
+                <u>Describe a superhero:</u>
+              </h2>
+              <p
+                style={{
+                  fontWeight: "500",
+                }}
+              >
+                I am {heros.name}. I have a {heros.appearance["eye-color"]} and{" "}
+                {heros.appearance["hair-color"]}. I am a {heros.work.occupation}{" "}
+                and my strength is "{heros.powerstats.strength}".{" "}
+              </p>
+            </div>
+            <div className="button">
+              <button>
+                {" "}
+                <Link to="/">Back</Link>
+              </button>
+            </div>
+          </>
+        ) : (
+          <p>loading..</p>
+        )}{" "}
       </div>
     </>
   );

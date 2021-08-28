@@ -32,7 +32,10 @@ const Searchbar = () => {
       <Layout className="body">
         <Header>
           <div className="logo">
-            <h2>Your SuperHeros</h2>
+            <img
+              src="https://www.templateupdates.com/wp-content/uploads/2018/04/Super-Hero-Heart-Logo-Template.jpg"
+              width="10%"
+            />
           </div>
 
           <Menu
@@ -43,7 +46,7 @@ const Searchbar = () => {
           >
             <Menu.Item key="1"> Home</Menu.Item>
             <Menu.Item key="2">
-              <Link to="/test"> SuperHeros List</Link>{" "}
+              <Link to="/test"> Heros List</Link>{" "}
             </Menu.Item>
           </Menu>
         </Header>
@@ -112,7 +115,7 @@ const Searchbar = () => {
         </div>
         <Pickcard heros={heros} />
         <Footer style={{ textAlign: "center" }}>
-          SuperHeros ©2021 Created by HEMALATHA
+          SuperHeros ©2021 Created by HEMALATHA K.
         </Footer>
       </Layout>
     </>
